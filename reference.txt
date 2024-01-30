@@ -5,3 +5,5 @@
 !.npm -v
 !.npm init
 npm install express
+touch index.js
+node index.js
