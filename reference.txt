@@ -5,5 +5,7 @@
 !.npm -v
 !.npm init
 npm install express
+npm install express ejs
+
 touch index.js
 node index.js
