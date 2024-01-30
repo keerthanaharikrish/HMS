@@ -1,0 +1,6 @@
+1. Create Node js project 
+
+!.install node js
+!.node -v
+!.npm -v
+!.npm init

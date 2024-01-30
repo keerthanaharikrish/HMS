@@ -1,0 +1,19 @@
+{
+  "name": "hrms",
+  "version": "1.0.0",
+  "description": "home tool rent management system",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuvasreeprem17/HMS.git"
+  },
+  "author": "Yuvasree",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuvasreeprem17/HMS/issues"
+  },
+  "homepage": "https://github.com/yuvasreeprem17/HMS#readme"
+}
