@@ -9,3 +9,7 @@ npm install express ejs
 
 touch index.js
 node index.js
+
+npm install sqlite3
+
+npm install express sequelize sqlite3 bcrypt body-parser express-session passport passport-local
