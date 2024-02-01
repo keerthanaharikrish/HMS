@@ -6,10 +6,23 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <title>Login</title>
+  <style>
+    #Body {
+        background-color: rgb(239, 243, 243);
+        background-image: url(https://demo.kaliumtheme.com/construction/wp-content/uploads/2017/10/blog-tools.jpg);
+    }
+    .container{
+        background-color: rgb(231, 238, 236);
+        width: 40%;
+        border-radius:40px;
+        padding-bottom: 10px;
+    }
+  </style>
 </head>
-<body>
+<body id="Body">
   <div class="container">
-    <h1 class="mt-5">Login</h1>
+    <center>
+      <h1 class="mt-5" id="login">Login</h1><br>
     <form action="/login" method="post">
       <div class="form-group">
         <label for="username">Username:</label>
@@ -21,6 +34,7 @@
       </div>
       <button type="submit" class="btn btn-primary">Login</button>
     </form>
+    </center>
   </div>
 
   <!-- Bootstrap JS and Popper.js (Optional, only if you need dropdowns, tooltips, etc.) -->
