@@ -3,28 +3,31 @@ const sqlite3 = require('sqlite3');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
-const port = 9000;
+const port = 9010;
 
 // Create a SQLite database
 const db = new sqlite3.Database('users1.db');
 
 
 db.run(`
-  CREATE TABLE IF NOT EXISTS users (
+CREATE TABLE IF NOT EXISTS users(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     username TEXT,
     password TEXT
-  )
+)
 `);
 
-db.run(`CREATE TABLE IF NOT EXISTS submissions (
-  id INTEGER PRIMARY KEY,
-  name TEXT,
-  contact_no TEXT,
-  address TEXT,
-  message TEXT)`);
+db.run(`
+CREATE TABLE IF NOT EXISTS submissions(
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    contact_no TEXT,
+    address TEXT,
+    message TEXT)
+`);
 
-db.run(`CREATE TABLE IF NOT EXISTS rentinfo(
+db.run(`
+CREATE TABLE IF NOT EXISTS rentinfo(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     email TEXT NOT NULL,
@@ -33,7 +36,8 @@ db.run(`CREATE TABLE IF NOT EXISTS rentinfo(
     time TIME NOT NULL,
     tool_name TEXT NOT NULL,
     additional_comments TEXT
-)`);
+)
+`);
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
